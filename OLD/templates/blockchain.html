@@ -1,0 +1,113 @@
+{% extends 'base.html' %} {% block content %}
+
+
+
+
+
+<div class="row"></div>
+<div class="row"></div>
+<div class="row"></div>
+
+<div class="row">
+    <div class="col-md-12 text-left">
+        <div class="card text-left" id="main_card">
+            <div class="row">
+                <div class="col-md-5 text-left">
+                    <div class="row">
+                        <div class="col-md-3 text-left">
+                        <h2>LeanCoin Blockchain </h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 text-left">
+                        <h2>Length: {{response.length}}</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 text-left">
+                        <h2>Validation Check:</h2>
+                        </div>
+                        <div class="col-md-5 text-left">
+                        <a href="{{ url_for('is_valid') }}" class="waves-effect waves-light btn btn_small">Validation Check</a>
+                        </div>
+                        <div class="col-md-4 text-left">
+                        <h2>{{ response.message }}</h2>
+                        </div>    
+                    </div>
+   
+                </div>
+            </div>
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row text-center">
+                <div class="col-md-1 text-left"></div>
+                {% for block in response.chain %}
+                <div class="col-md-3 col-lg-3 col-xl-2 text-left">
+                    <div class="card text-center" id="blockchain">
+                        <div class="row">
+                            {% if block.index == 1 %}
+                            <h3> GENESIS BLOCK </h3>
+                            {% else %}
+                            <h3> BLOCK # {{block.index}} </h3>
+                            {% endif %}
+                        </div>
+                        <div class="row">
+                            <h4> {{block.timestamp}} </h4>
+                        </div>
+                        <div class="row">
+                            <h4> {{block.proof}} </h4>
+                        </div>
+                        <div class="row">
+                            <h5 style="font-size: 8px;"> {{block.previous_hash}} </h5>
+                        </div>
+                        <div class="row text-center">
+                            <h4> TRANSACTIONS </h4>
+                        <div class="card text-center" id="transactions">    
+                            <table style="width:90%; margin-left: 20px;">
+                                {% for element in block.transactions %}
+                                <div class="row">
+                                <tr>
+                                    <th>Sender:</th>
+                                    <td style="font-size: 10px;">{{ element.sender }}</td>
+                                </tr>
+                                <tr>
+                                    <th>Receiver: </th>
+                                    <td> {{ element.receiver}}</td>
+                                </tr>
+                                <tr>
+                                    <th>Amount:</th>
+                                    <td>{{ element.amount}}</td>
+                                </tr>
+                                </div>
+                                {% endfor %}
+                            </table>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1 text-center" id="chain">
+                    <i class="fas fa-link fa-3x"></i>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row">
+                <a href="{{ url_for('index') }}" class="waves-effect waves-light btn-large" id="add" type="submit"><i class="large material-icons left">arrow_back</i>MAIN PAGE</a>
+            </div>
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row">
+            </div>
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row">
+            </div>
+            <div class="row"></div>
+            <div class="row text-center">
+
+            </div>
+        </div>
+    </div>
+
+    {% endblock %}

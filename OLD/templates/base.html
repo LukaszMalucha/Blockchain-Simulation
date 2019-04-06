@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blockchain Simulation</title>
+    <!-- Material Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Materialize-->
+    <link rel="stylesheet" href="{{url_for('static', filename='materialize/css/materialize.min.css')}}" media="screen,projection" />
+    <!-- Bootstrap-->
+    <link href="{{url_for('static', filename='css/bootstrap.css')}}" rel="stylesheet" />
+    <!-- FontAwesome Styles-->
+    <link href="{{url_for('static', filename='font-awesome/css/fontawesome-all.css')}}" rel="stylesheet" />
+    <script src="{{url_for('static', filename='font-awesome/js/fontawesome-all.min.js')}}"></script>
+    <!-- Custom Styles-->
+    <link href="{{url_for('static', filename='css/custom-styles.css')}}" rel="stylesheet" />
+    <!-- Morris Chart Styles-->
+    <link href="{{url_for('static', filename='js/morris/morris-0.4.3.min.css')}}" rel="stylesheet" />
+    <!-- Google Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+
+
+<body>
+    <!-- WRAPPER -->
+    <div id="wrapper">
+
+
+         <!-- TOP NAVBAR -->
+        <nav class="navbar navbar-default top-navbar text-center">
+                <h1 style="color: #FFCB9A;">BLOCKCHAIN ENVIRONMENT SIMULATION</h1>
+        </nav>
+
+        <!--/. TOP NAVBAR ****************************************************************************************************************************************************************************************** -->
+
+        <!-- PAGE-WRAPPER -->
+        <div id="page-wrapper">
+            <!-- PAGE-INDEX -->
+            <div id="page-index">
+                <div class="dashboard-cards">
+                    {% block content %} {% endblock %}
+
+
+
+
+
+                </div>
+
+            </div>
+            <!-- PAGE-INDEX -->
+
+        </div>
+        
+        <!-- PAGE-WRAPPER -->
+
+    </div>
+    <!-- WRAPPER -->
+
+            <!-- jQuery Js -->
+        <script src="{{url_for('static', filename='js/jquery-1.10.2.js')}}"></script>
+
+        <!-- Bootstrap Js -->
+        <script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+
+        <!-- Materialize Js -->
+        <script src="{{url_for('static', filename='materialize/js/materialize.min.js')}}"></script>
+
+        <!-- Metis Menu Js -->
+        <script src="{{url_for('static', filename='js/jquery.metisMenu.js')}}"></script>
+
+        <script src="{{url_for('static', filename='js/dataTables/jquery.dataTables.js')}}"></script>
+        <script src="{{url_for('static', filename='js/dataTables/dataTables.bootstrap.js')}}"></script>
+        <script>
+            $(document).ready(function() {
+                $('#dataTables-example').dataTable();
+            });
+        </script>
+
+        <!-- Custom Js -->
+        <script src="{{url_for('static', filename='js/custom-scripts.js')}}"></script>
+
+        <!-- Morris Chart Js -->
+        <script src="{{url_for('static', filename='js/morris/raphael-2.1.0.min.js')}}"></script>
+        <script src="{{url_for('static', filename='js/morris/morris.js')}}"></script>
+
+
+        <script src="{{url_for('static', filename='js/easypiechart.js')}}"></script>
+        <script src="{{url_for('static', filename='js/easypiechart-data.js')}}"></script>
+
+        <script src="{{url_for('static', filename='js/Lightweight-Chart/jquery.chart.js')}}"></script>
+
+</body>
+
+</html>
