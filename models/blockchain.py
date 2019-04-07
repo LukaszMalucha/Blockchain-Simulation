@@ -13,7 +13,8 @@ class Blockchain:
     def create_block(self, proof, previous_hash):
         """Create a single Block"""
         block = {'index': len(self.chain) + 1,  # def block index as a length of chain + 1
-                 'timestamp': str(datetime.datetime.now()),
+                 'timestamp_date': str(datetime.date.today()),
+                 'timestamp_time': str(datetime.datetime.now().time()),
                  # time when block was created - as a string for json format
                  'proof': proof,  # proof of work
                  'previous_hash': previous_hash}  # previous block hash
@@ -75,10 +76,12 @@ def block_mining(blockchain):
     # Create new block
     block = blockchain.create_block(proof, previous_hash)
 
-    response = {'message': 'Congratz, you mined a block',
-                'index': block['index'],
-                'timestamp': block['timestamp'],
-                'proof': block['proof'],
-                'previous_hash': block['previous_hash']}
+    response = {
+        'index': block['index'],
+        'timestamp_date': block['timestamp_date'],
+        'timestamp_time': block['timestamp_time'],
+        'proof': block['proof'],
+        'previous_hash': block['previous_hash']
+        }
 
     return response

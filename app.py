@@ -11,7 +11,6 @@ from models.blockchain import Blockchain, block_mining
 # Settings
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
-# For User Credentials:
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('SQLALCHEMY_DATABASE_URI')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
@@ -27,7 +26,7 @@ api.add_resource(UserRegister, '/register')
 api.add_resource(UserLogin, '/login')
 api.add_resource(UserLogout, '/logout')
 
-## Initiate Blockchain:
+# Initiate Blockchain:
 blockchain = Blockchain()
 
 
@@ -36,7 +35,7 @@ def dashboard():
     return render_template("dashboard.html")
 
 
-@app.route('/mine_block', methods=['GET'])
+@app.route('/mine_block', methods=['POST'])
 def mine_block():
     response = block_mining(blockchain)
     return jsonify(response), 200

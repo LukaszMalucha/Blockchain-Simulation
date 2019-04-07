@@ -1,28 +1,30 @@
 
 $('.dropdown-trigger').dropdown();
 
-
-$(".alert").delay(3000).fadeOut(200, function() {
-    $(this).alert('close');
-});
+//
+//$(".alert").delay(3000).fadeOut(200, function() {
+//    $(this).alert('close');
+//});
+//
 
 
 
 $(document).ready(function() {
     $('.sidenav').sidenav();
 
-    $('.deleteButton').on('click', function(){
+    $('.blockMining').on('click', function(){
+        $.ajax({
+                    type : 'POST',
+                    url : '/mine_block'
+        })
+        .done(function(data) {
+            $('#blockIndex').text("Block #" + data.index);
+            $('#proofOfWork').text("Proof of Work: " + data.proof);
+            $('#blockDate').text("Mined at: " + data.timestamp_date);
+            $('#blockTime').text("Time: " + data.timestamp_time);
+        });
 
-         var algorithm_id = $(this).attr('algorithm_id');
-
-         req = $.ajax({
-            url : '/delete',
-            type : 'DELETE',
-            data : {id : algorithm_id }
-         });
-
-         $('#algorithmRow'+algorithm_id).remove();
-
+        $('#minedBlock').fadeOut(300).fadeIn(300);
 
     });
 

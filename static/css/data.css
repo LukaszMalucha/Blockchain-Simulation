@@ -78,7 +78,15 @@
     width: 75%;
     border: 1px solid #515663;
     color: white;
+    margin-top: 20px;
 
+}
+
+.card-function:hover,
+.card-function:active,
+.card-function:focus {
+    color: #FFCB9A;
+    background: #2c313a;
 }
 
 .card-function .card-image {
@@ -91,8 +99,10 @@
 }
 
 .card-function .card-stacked {
-    padding-top: 8%;
+    padding-top: 10%;
 }
+
+
 
 
 /*------------------------------------------------------------------------------
