@@ -1,0 +1,140 @@
+/*------------------------------------------------------------------------------
+    BLOCKCHAIN DATA
+------------------------------------------------------------------------------*/
+
+.dashboard-cards {
+    width: 90%;
+    margin: auto;
+}
+
+
+
+.row-title {
+    width: 70%;
+    margin: auto;
+    text-align: left;
+
+}
+
+
+.row-title h3 {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+
+.row-title p {
+    color: #dadddf;
+    font-size: 12px;
+
+}
+
+.row-cards {
+    width: 70%;
+    text-align: center;
+    padding: 4% 0% 4% 0%;
+
+
+}
+
+.card-block {
+    background: #373d49;
+    border-radius: 5px;
+    width: 90%;
+    border: 1px solid #515663;
+}
+
+.card-block .card-content {
+    font-size: 1rem;
+}
+
+.card-block .card-title {
+    color: #FFCB9A;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.card-block .card-action {
+    padding: 0px;
+}
+
+.btn-blockchain {
+    width: 100%;
+    background: transparent;
+    box-shadow: none;
+}
+
+
+.btn-blockchain:hover, .btn-blockchain:focus {
+    background: transparent;
+    color: #FFCB9A;
+    box-shadow: none;
+}
+
+
+.card-function {
+    background: #373d49;
+    border-radius: 5px;
+    width: 75%;
+    border: 1px solid #515663;
+    color: white;
+
+}
+
+.card-function .card-image {
+    padding: 5%;
+
+}
+
+.card-function .card-image i {
+    color: #FFCB9A;
+}
+
+.card-function .card-stacked {
+    padding-top: 8%;
+}
+
+
+/*------------------------------------------------------------------------------
+    MEDIA QUERIES
+------------------------------------------------------------------------------*/
+
+
+@media(max-width:1900px) {
+
+
+}
+
+
+@media(max-width:1700px) {
+
+
+}
+
+@media(min-width:992px) {
+
+}
+
+@media(max-width:992px) {
+
+
+
+}
+
+
+
+
+@media(max-width:695px) {
+
+}
+
+
+@media(max-width:520px) {
+
+}
+
+
+
+
+
+

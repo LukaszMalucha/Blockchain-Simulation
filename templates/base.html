@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Cat vs Dog Classifier</title>
+    <title>Blockchain Simulation</title>
     <!-- Material Icons-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Bootstrap-->
@@ -19,10 +19,10 @@
     <!-- Custom Styles-->
     <link href="{{url_for('static', filename='css/custom-styles.css')}}" rel="stylesheet"/>
     <link href="{{url_for('static', filename='css/navbar.css')}}" rel="stylesheet"/>
+    <link href="{{url_for('static', filename='css/data.css')}}" rel="stylesheet"/>
     <!-- Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
 
 
     <!-- jQuery-->
@@ -45,14 +45,14 @@
     <!-- TOP NAVBAR -->
     <nav class="navbar navbar-default top-navbar" role="navigation">
         <div class="navbar-header">
-            <a class="navbar-brand company-logo" href="{{url_for('dashboard.dashboard')}}"><img class="company-logo"
+            <a class="navbar-brand company-logo" href=""><img class="company-logo"
                                                                                                 src="/static/img/creolabs-white.png"
                                                                                                 alt="Creo Labs Logo"/></a>
         </div>
         <ul class="nav navbar-top-links navbar-right">
-            <li><a class="nav-link" href="{{url_for('dashboard.add_algorithm')}}"><i class="fas fa-code-branch"></i> <b>
+            <li><a class="nav-link" href=""><i class="fas fa-code-branch"></i> <b>
                 Algorithms</b></a></li>
-            <li><a class="nav-link" href="{{url_for('dashboard.map')}}"><i class="fab fa-python"></i> <b>SciKit Map</b></a>
+            <li><a class="nav-link" href=""><i class="fab fa-python"></i> <b>SciKit Map</b></a>
             </li>
             <li><a class='dropdown-trigger nav-link' href='#' data-target='dropdown1' id="user_dropdown"><i
                     class="fas fa-caret-down"></i><b>{{ current_user.email }} </b></a></li>
@@ -76,9 +76,9 @@
 
     <!-- MOBILE -->
     <ul class="sidenav" id="mobile-demo">
-        <li><a href="{{url_for('dashboard.add_algorithm')}}"><i class="fas fa-code-branch"></i>
+        <li><a href=""><i class="fas fa-code-branch"></i>
         Algorithms</a></li>
-        <li><a href="{{url_for('dashboard.map')}}"><i class="fab fa-python"></i> SciKit Map</a>
+        <li><a href=""><i class="fab fa-python"></i> SciKit Map</a>
         </li>
         <li><a target="_blank" href="https://github.com/LukaszMalucha/Cat-vs.-Dog-Classifier/"><i
                 class="fab fa-github"></i> GitHub</a></li>

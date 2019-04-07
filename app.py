@@ -1,12 +1,12 @@
 import os
-# import env
+import env
 
-from flask import Flask, render_template
+from flask import Flask, render_template, jsonify, request
 from flask_bootstrap import Bootstrap
-from flask_pymongo import PyMongo
 from flask_restful import Api
 
 from resources.user import UserRegister, UserLogin, UserLogout, login_manager
+from models.blockchain import Blockchain, block_mining
 
 # Settings
 app = Flask(__name__)
@@ -14,28 +14,50 @@ app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
 # For User Credentials:
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('SQLALCHEMY_DATABASE_URI')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-# For Suggested Questions:
-app.config["MONGO_DBNAME"] = os.environ.get('MONGO_DBNAME')
-app.config["MONGO_URI"] = os.environ.get('MONGO_URI')
-
 
 app.config['PROPAGATE_EXCEPTIONS'] = True
-app.config['DEBUG'] = False
+app.config['DEBUG'] = True
 api = Api(app)
 
 Bootstrap(app)
 login_manager.init_app(app)
-mongo = PyMongo(app)
 
 # Register Resources
 api.add_resource(UserRegister, '/register')
 api.add_resource(UserLogin, '/login')
 api.add_resource(UserLogout, '/logout')
 
-# Dashboard Blueprint
-from project.dashboard.views import dashboard_blueprint
-app.register_blueprint(dashboard_blueprint)
+## Initiate Blockchain:
+blockchain = Blockchain()
 
+
+@app.route('/', methods=['GET', 'POST'])
+def dashboard():
+    return render_template("dashboard.html")
+
+
+@app.route('/mine_block', methods=['GET'])
+def mine_block():
+    response = block_mining(blockchain)
+    return jsonify(response), 200
+
+
+@app.route('/display_blockchain', methods=['GET'])
+def display_blockchain():
+    response = {'chain': blockchain.chain,
+                'length': len(blockchain.chain)}
+    return jsonify(response), 200
+
+
+@app.route('/add_transaction', methods=['GET', 'POST'])
+def add_transaction():
+    response = {}
+    if request.method == 'POST':
+        index = blockchain.add_transaction(request.form['sender'], request.form['receiver'], request.form['amount'])
+        response = {'message': "Transaction will be added to Block {0}".format(index)}
+        return render_template('index.html', response=response)
+
+    return render_template('add_transaction.html', response=response)
 
 # Error Handlers
 @app.errorhandler(404)
@@ -60,8 +82,8 @@ if __name__ == '__main__':
         def create_tables():
             db.create_all()
 
-    # app.run(debug=True)
+    app.run(debug=True)
 
 # Heroku
-    port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port)
+#     port = int(os.environ.get('PORT', 5000))
+#     app.run(host='0.0.0.0', port=port)

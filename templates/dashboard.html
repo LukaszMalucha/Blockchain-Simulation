@@ -1,0 +1,172 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<div class="row header">
+    {% if messages %} {% for message in messages %} {% if message.tags == "success" %}
+    <div class="alert alert-success">
+        <div class="messages text-center">
+            {{ message }}
+        </div>
+    </div>
+    {% else %}
+    <div class="alert alert-danger">
+        <div class="messages text-center">
+            {{ message }}
+        </div>
+    </div>
+    {% endif %} {% endfor %}
+    {% else %}
+
+    {% endif %}
+</div>
+
+<div class="dashboard-cards">
+    <div class="row row-title">
+        <h3>Build your Blockchain</h3>
+        <p><i class="fab fa-ethereum"></i> &nbsp; Use one of the functions available below</p>
+    </div>
+    <div class="row row-cards">
+        <div class="col-md-4">
+            <div class="card horizontal card-function">
+                <div class="card-image">
+                    <i class="fab fa-4x fa-ethereum"></i>
+                </div>
+                <div class="card-stacked">
+                    <span class="card-title">Mine Block</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card horizontal card-function">
+                <div class="card-image">
+                    <i class="fab fa-4x fa-btc"></i>
+                </div>
+                <div class="card-stacked">
+                    <span class="card-title">Add Transaction</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card horizontal card-function">
+                <div class="card-image">
+                    <i class="fas fa-4x fa-link"></i>
+                </div>
+                <div class="card-stacked">
+                    <span class="card-title">Update Chain</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row row-title">
+        <h3>Blockchain State</h3>
+        <p><i class="fab fa-ethereum"></i> &nbsp; Currently mined blocks with transactions data</p>
+    </div>
+
+    <div class="row row-cards">
+        <div class="col-md-3">
+            <div class="card card-block">
+                <div class="card-content white-text">
+                    <span class="card-title">Block #2</span>
+                    <br>
+                    <p>Proof of Work: 533</p>
+                    <p>Mined at:</p>
+                    <p>2019-04-07 </p>
+                    <p> 09:13:11.275350 </p>
+                </div>
+                <div class="row plain-element">
+                    <div class="col-md-6 plain-element">
+                        <a class="btn btn-blockchain" href="#">Previous Hash</a>
+                    </div>
+                    <div class="col-md-6 plain-element">
+                        <a class="btn btn-blockchain" href="#">Transactions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card card-block">
+                <div class="card-content white-text">
+                    <span class="card-title">Block #2</span>
+                    <br>
+                    <p>Proof of Work: 533</p>
+                    <p>Mined at:</p>
+                    <p>2019-04-07 </p>
+                    <p> 09:13:11.275350 </p>
+                </div>
+                <div class="row plain-element">
+                    <div class="col-md-6 plain-element">
+                        <a class="btn btn-blockchain" href="#">Previous Hash</a>
+                    </div>
+                    <div class="col-md-6 plain-element">
+                        <a class="btn btn-blockchain" href="#">Transactions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card card-block">
+                <div class="card-content white-text">
+                    <span class="card-title">Block #2</span>
+                    <br>
+                    <p>Proof of Work: 533</p>
+                    <p>Mined at:</p>
+                    <p>2019-04-07 </p>
+                    <p> 09:13:11.275350 </p>
+                </div>
+                <div class="row plain-element">
+                    <div class="col-md-6 plain-element">
+                        <a class="btn btn-blockchain" href="#">Previous Hash</a>
+                    </div>
+                    <div class="col-md-6 plain-element">
+                        <a class="btn btn-blockchain" href="#">Transactions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card card-block">
+                <div class="card-content white-text">
+                    <span class="card-title">Block #2</span>
+                    <br>
+                    <p>Proof of Work: 533</p>
+                    <p>Mined at:</p>
+                    <p>2019-04-07 </p>
+                    <p> 09:13:11.275350 </p>
+                </div>
+                <div class="row plain-element">
+                    <div class="col-md-6 plain-element">
+                        <a class="btn btn-blockchain" href="#">Previous Hash</a>
+                    </div>
+                    <div class="col-md-6 plain-element">
+                        <a class="btn btn-blockchain" href="#">Transactions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card card-block">
+                <div class="card-content white-text">
+                    <span class="card-title">Block #2</span>
+                    <br>
+                    <p>Proof of Work: 533</p>
+                    <p>Mined at:</p>
+                    <p>2019-04-07 </p>
+                    <p> 09:13:11.275350 </p>
+                </div>
+                <div class="row plain-element">
+                    <div class="col-md-6 plain-element">
+                        <a class="btn btn-blockchain" href="#">Previous Hash</a>
+                    </div>
+                    <div class="col-md-6 plain-element">
+                        <a class="btn btn-blockchain" href="#">Transactions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}

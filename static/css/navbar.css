@@ -23,8 +23,8 @@
     z-index: 300;
     border: none;
     height: 60px;
-    padding-left: 9%;
-    padding-right: 8%;
+    padding-left: 16%;
+    padding-right: 16%;
     padding-top: 0px;
     padding-bottom: 0px;
 
@@ -169,7 +169,7 @@ nav ul b {
 ------------------------------------------------------------------------------*/
 
 .top-navbar {
-    background: #1a2026;
+    background: #3e4452;
     box-shadow: none;
     border: none;
 }
