@@ -1,7 +1,8 @@
 import datetime
 import hashlib
 import json
-
+import requests
+from urllib.parse import urlparse
 
 class Blockchain:
     """Blockchain Constructor"""
@@ -62,6 +63,38 @@ class Blockchain:
             previous_block = block
             block_index += 1
         return True
+
+    def add_transaction(self, sender, receiver, amount):
+        """Add transaction to the block"""
+        self.transactions.append({'sender': sender,
+                                  'receiver': receiver,
+                                  'amount': amount})
+        previous_block = self.get_previous_block()
+        return previous_block['index'] + 1
+
+    def add_node(self, address):
+        """Add node"""
+        parsed_url = urlparse(address)
+        self.nodes.add(parsed_url.netloc)  # get the address from http
+
+
+    def replace_chain(self):
+        network = self.nodes
+        longest_chain = None
+        max_length = len(self.chain)
+        for node in network:
+            response = requests.get('https://{0}/display_blockchain'.format(node))
+            if response.status_code == 200:
+                length = response.json()['length']
+                chain = response.json()['chain']
+                if length > max_length and self.is_chain_valid(chain):
+                    max_length = length
+                    longest_chain = chain
+        if longest_chain:
+            self.chain = longest_chain
+            return True
+        return False
+
 
 
 def block_mining(blockchain):

@@ -82,6 +82,19 @@ a {
     padding: 0px;
 }
 
+#HashNumber {
+    width: 75%;
+    margin: auto;
+    word-wrap: break-word;
+    font-size: 0.8rem;
+}
+button {
+    font-family: 'Jura', sans-serif;
+
+}
+
+
+
 
 
 
@@ -105,38 +118,18 @@ a {
     text-align: center;
 }
 
-button {
-    font-family: 'Jura', sans-serif;
 
-}
 /*----------------------------------------------
     MEDIA QUERIES
 ------------------------------------------------*/
 
-@media(max-width:1900px) {}
 
-
-@media(max-width:1500px) {}
-
-@media(max-width:1500px) {
-    .card .card-title {
-        font-size: 18px;
-    }
-
+@media(max-width:1700px) {
 }
 
-@media(max-width:859px) {}
 
-@media(min-width:768px) {}
-
-@media(max-width:768px) {}
-
-
-
-@media(max-width:695px) {}
+@media(max-width:992px) {}
 
 
 @media(max-width:520px) {}
 
-
-@media(max-width:480px) {}

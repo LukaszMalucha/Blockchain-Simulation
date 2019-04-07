@@ -9,7 +9,7 @@
 <div class="dashboard-cards">
     <div class="row row-title">
         <h3>Build your Blockchain</h3>
-        <p><i class="fab fa-ethereum"></i> &nbsp; Use one of the functions available below</p>
+        <p>&nbsp;&nbsp;<i class="fab fa-ethereum"></i> &nbsp; Use one of the functions available below</p>
     </div>
     <div class="row row-cards">
         <div class="col-md-4">
@@ -21,29 +21,30 @@
                     <span class="card-title">Mine Block</span>
                 </div>
             </button>
-            <a href="{{ url_for('mine_block') }}">
-                <div class="card horizontal card-function">
-                    <div class="card-image">
-                        <i class="fab fa-4x fa-btc"></i>
-                    </div>
-                    <div class="card-stacked">
-                        <span class="card-title">Add Transaction</span>
-                    </div>
+            <button data-target="modalTransaction" class="card horizontal card-function modal-trigger">
+                <div class="card-image">
+                    <i class="fab fa-4x fa-btc"></i>
                 </div>
-            </a>
+                <div class="card-stacked">
+                    <span class="card-title">Add Transaction</span>
+                </div>
+            </button>
         </div>
         <div class="col-md-3">
             <div class="card card-block" id="minedBlock">
                 <div class="card-content white-text">
-                    <span class="card-title" id="blockIndex">Block #2</span>
+                    <span class="card-title" id="blockIndex">Genesis Block</span>
                     <br>
-                    <p id="proofOfWork">Proof of Work: 533</p>
-                    <p id="blockDate">Mined at: 2019-04-07 </p>
-                    <p id="blockTime">Time: 09:13:11.275350 </p>
+                    <p id="proofOfWork"><b>Proof of Work:</b> 1</p>
+                    <p id="blockDate"><b>Mined at:</b> 2009-01-09 </p>
+                    <p id="blockTime"><b>Time:</b> 02:54:25.275350 </p>
+                    <p><b>Previous Hash</b></p>
+                    <p id="HashNumber">a666b2501f212b9da4ff46e8fb675fc3cf03d15131dc4d869c032a1daf684907</p>
                 </div>
                 <div class="row plain-element">
                     <div class="col-md-6 plain-element">
-                        <a class="btn btn-blockchain" href="#">Previous Hash</a>
+                        <a class="btn btn-blockchain tooltipped" data-position="bottom" data-tooltip="asdasdas">Previous
+                            Hash</a>
                     </div>
                     <div class="col-md-6 plain-element">
                         <a class="btn btn-blockchain" href="#">Transactions</a>
@@ -55,23 +56,24 @@
 
     <div class="row row-title">
         <h3>Blockchain State</h3>
-        <p><i class="fab fa-ethereum"></i> &nbsp; Currently mined blocks with transactions data</p>
+        <p>&nbsp;&nbsp;<i class="fab fa-ethereum"></i> &nbsp; Currently mined blocks with transactions data</p>
     </div>
 
-    <div class="row row-cards">
+    <div class="row row-cards" id="rowBlockchain">
         <div class="col-md-3">
             <div class="card card-block">
                 <div class="card-content white-text">
-                    <span class="card-title">Block #2</span>
+                    <span class="card-title">Genesis Block</span>
                     <br>
-                    <p>Proof of Work: 533</p>
-                    <p>Mined at:</p>
-                    <p>2019-04-07 </p>
-                    <p> 09:13:11.275350 </p>
+                    <p>Proof of Work: 1</p>
+                    <p>Mined at: 2009-01-09 </p>
+                    <p>Time: 02:54:25.275350 </p>
+                    <p>Previous Hash</p>
                 </div>
                 <div class="row plain-element">
                     <div class="col-md-6 plain-element">
-                        <a class="btn btn-blockchain" href="#">Previous Hash</a>
+                        <a class="btn btn-blockchain tooltipped" data-position="bottom" data-tooltip="asdasdas">Previous
+                            Hash</a>
                     </div>
                     <div class="col-md-6 plain-element">
                         <a class="btn btn-blockchain" href="#">Transactions</a>
@@ -79,8 +81,43 @@
                 </div>
             </div>
         </div>
-
-
     </div>
 </div>
+
+<div id="modalTransaction" class="modal">
+    <form action="" method="POST" class="col s12">
+        <div class="card form-card">
+            <div class="card-content">
+                <span class="card-title">Add Algorithm</span>
+                <br><br>
+                <div class="input-field col s12" id="field">
+                    <i class="material-icons prefix">assignment</i>
+                    <input id="q_field" name="sender" type="text" required>
+                    <label for="icon_prefix">Sender</label>
+                </div>
+                <div class="input-field col s12" id="field">
+                    <i class="material-icons prefix">assignment</i>
+                    <input id="q_field" name="receiver" type="text" required>
+                    <label for="icon_prefix">Receiver</label>
+                </div>
+                <div class="input-field col s12" id="field">
+                    <i class="material-icons prefix">assignment</i>
+                    <input id="q_field" name="amount" type="number" style="color: white" required>
+                    <label for="icon_prefix">Amount</label>
+                </div>
+                <div class="input-field col s12" style="height:25px">
+                </div>
+            </div>
+            <button type="submit" class="btn-card"><span>Submit <i
+                    class="far fa-arrow-alt-circle-right"></i></span>
+            </button>
+        </div>
+    </form>
+</div>
+
+
+<script type="text/javascript">
+
+
+</script>
 {% endblock %}

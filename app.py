@@ -41,11 +41,6 @@ def mine_block():
     return jsonify(response), 200
 
 
-@app.route('/display_blockchain', methods=['GET'])
-def display_blockchain():
-    response = {'chain': blockchain.chain,
-                'length': len(blockchain.chain)}
-    return jsonify(response), 200
 
 
 @app.route('/add_transaction', methods=['GET', 'POST'])

@@ -58,18 +58,15 @@
     padding: 0px;
 }
 
-.btn-blockchain {
-    width: 100%;
-    background: transparent;
-    box-shadow: none;
+.form-card {
+  background: #373d49;
+  color: #FFCB9A;
+  padding-top: 10px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 50px;
 }
 
-
-.btn-blockchain:hover, .btn-blockchain:focus {
-    background: transparent;
-    color: #FFCB9A;
-    box-shadow: none;
-}
 
 
 .card-function {
@@ -101,6 +98,91 @@
 .card-function .card-stacked {
     padding-top: 10%;
 }
+
+.modal {
+    width: 20%;
+    height: 490px;
+    background: transparent;
+    max-height: 500px;
+    overflow: hidden;
+
+}
+
+/*------------------------------------------------------------------------------
+    BUTTONS
+------------------------------------------------------------------------------*/
+
+
+.btn-card {
+    width: 100%;
+    height: 50px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-color: transparent;
+    text-align: right;
+    color: white;
+    background-color: #262a33;
+    font-size: 18px;
+
+}
+
+.btn-card:hover, .btn-card:active, .btn-card:focus {
+    background-color: #15181c;
+}
+
+
+.btn-blockchain {
+    width: 100%;
+    background: transparent;
+    box-shadow: none;
+}
+
+
+.btn-blockchain:hover, .btn-blockchain:focus {
+    background: transparent;
+    color: #FFCB9A;
+    box-shadow: none;
+}
+
+
+
+/*------------------------------------------------------------------------------
+    FORMS
+------------------------------------------------------------------------------*/
+
+
+input[type=text] {
+    border-radius: 10px;
+    border-color: #1a2026;
+    background-color: #1a2026;
+    color: white;
+}
+
+input[type="number"]:not(.browser-default):focus:not([readonly]),
+input[type="text"]:not(.browser-default):focus:not([readonly]) {
+    border-bottom: 1px solid #ffcb9a;
+    box-shadow: 0 1px 0 0 #ffcb9a;
+}
+
+input[type="number"]:not(.browser-default):focus:not([readonly]) + label,
+input[type="text"]:not(.browser-default):focus:not([readonly]) + label {
+    color: #ffcb9a;
+}
+
+.input-field .prefix {
+    top: 1rem;
+}
+
+.input-field .prefix.active {
+    color: #ffcb9a !important;
+}
+
+input[type="text"]:not(.browser-default) {
+    height: 4rem;
+}
+
+
+
 
 
 
