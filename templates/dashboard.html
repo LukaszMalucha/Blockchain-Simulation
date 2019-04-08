@@ -30,24 +30,30 @@
                 </div>
             </button>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-4">
             <div class="card card-block" id="minedBlock">
-                <div class="card-content white-text">
+                <div class="card-content">
                     <span class="card-title" id="blockIndex">Genesis Block</span>
                     <br>
-                    <p id="proofOfWork"><b>Proof of Work:</b> 1</p>
-                    <p id="blockDate"><b>Mined at:</b> 2009-01-09 </p>
-                    <p id="blockTime"><b>Time:</b> 02:54:25.275350 </p>
-                    <p><b>Previous Hash</b></p>
+                    <p><b>Proof of Work: </b><span id="proofOfWork">1</span></p>
+                    <p><b>Mined at: </b> <span id="blockDate">2009-01-09</span></p>
+                    <p><b> Time: </b><span id="blockTime">02:54:25.275350</span></p>
+                    <p><b>Previous Hash:</b></p>
                     <p id="HashNumber">a666b2501f212b9da4ff46e8fb675fc3cf03d15131dc4d869c032a1daf684907</p>
-                </div>
-                <div class="row plain-element">
-                    <div class="col-md-6 plain-element">
-                        <a class="btn btn-blockchain tooltipped" data-position="bottom" data-tooltip="asdasdas">Previous
-                            Hash</a>
-                    </div>
-                    <div class="col-md-6 plain-element">
-                        <a class="btn btn-blockchain" href="#">Transactions</a>
+                    <p id="blockTransactions"><b>Transactions:</b></p>
+                    <div class="row plain-element row-table">
+                        <table class="transactions-table" id="transactionTable">
+                            <tr>
+                                <th>Sender</th>
+                                <th>Reciever</th>
+                                <th>Amount</th>
+                            </tr>
+                            <tr>
+                                <td id="sender">Jillasdazsdasasdasd</td>
+                                <td id="receiver">Smith</td>
+                                <td id="amount">50</td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </div>
@@ -85,19 +91,19 @@
 </div>
 
 <div id="modalTransaction" class="modal">
-    <form action="" method="POST" class="col s12">
+    <form action="{{url_for('add_transaction') }}" method="POST" class="col s12">
         <div class="card form-card">
             <div class="card-content">
                 <span class="card-title">Add Algorithm</span>
                 <br><br>
                 <div class="input-field col s12" id="field">
                     <i class="material-icons prefix">assignment</i>
-                    <input id="q_field" name="sender" type="text" required>
+                    <input id="q_field" name="sender" type="text" maxlength="24" required>
                     <label for="icon_prefix">Sender</label>
                 </div>
                 <div class="input-field col s12" id="field">
                     <i class="material-icons prefix">assignment</i>
-                    <input id="q_field" name="receiver" type="text" required>
+                    <input id="q_field" name="receiver" type="text" maxlength="24" required>
                     <label for="icon_prefix">Receiver</label>
                 </div>
                 <div class="input-field col s12" id="field">

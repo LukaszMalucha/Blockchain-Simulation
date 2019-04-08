@@ -40,18 +40,26 @@
 .card-block {
     background: #373d49;
     border-radius: 5px;
-    width: 90%;
+    width: 95%;
     border: 1px solid #515663;
 }
 
 .card-block .card-content {
     font-size: 1rem;
+    text-align: left;
+    color: #FFCB9A;
+}
+
+.card-block .card-content b {
+    color: white;
+    font-weight: normal;
 }
 
 .card-block .card-title {
     color: #FFCB9A;
     font-size: 1.5rem;
     font-weight: 300;
+    text-align: center;
 }
 
 .card-block .card-action {
@@ -72,7 +80,7 @@
 .card-function {
     background: #373d49;
     border-radius: 5px;
-    width: 75%;
+    width: 100%;
     border: 1px solid #515663;
     color: white;
     margin-top: 20px;
@@ -106,6 +114,14 @@
     max-height: 500px;
     overflow: hidden;
 
+}
+
+#HashNumber {
+    width: 74%;
+    margin-right: 26%;
+    word-wrap: break-word;
+    font-size: 0.8rem;
+    color: #FFCB9A;
 }
 
 /*------------------------------------------------------------------------------
@@ -142,6 +158,37 @@
     background: transparent;
     color: #FFCB9A;
     box-shadow: none;
+}
+
+
+
+/*------------------------------------------------------------------------------
+    TABLES
+------------------------------------------------------------------------------*/
+
+
+.transactions-table {
+    height: 50px;
+    overflow: auto;
+
+}
+
+
+.transactions-table th,
+.transactions-table td{
+    padding: 5px 5px 5px 0px;
+    font-size: 0.8rem;
+    color: white;
+    font-weight: normal;
+
+}
+
+.transactions-table td {
+    font-size: 0.7rem;
+}
+
+.transactions-table tr{
+    border-bottom: none;
 }
 
 

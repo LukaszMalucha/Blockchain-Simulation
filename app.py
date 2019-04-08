@@ -1,7 +1,10 @@
 import os
+
+from werkzeug.utils import redirect
+
 import env
 
-from flask import Flask, render_template, jsonify, request
+from flask import Flask, render_template, jsonify, request, url_for
 from flask_bootstrap import Bootstrap
 from flask_restful import Api
 
@@ -41,17 +44,17 @@ def mine_block():
     return jsonify(response), 200
 
 
-
-
-@app.route('/add_transaction', methods=['GET', 'POST'])
+@app.route('/add_transaction', methods=['POST'])
 def add_transaction():
-    response = {}
-    if request.method == 'POST':
+    if request.method == "POST":
         index = blockchain.add_transaction(request.form['sender'], request.form['receiver'], request.form['amount'])
         response = {'message': "Transaction will be added to Block {0}".format(index)}
-        return render_template('index.html', response=response)
+        return redirect(url_for('dashboard'))
+    return render_template('dashboard.html')
 
-    return render_template('add_transaction.html', response=response)
+
+
+
 
 # Error Handlers
 @app.errorhandler(404)

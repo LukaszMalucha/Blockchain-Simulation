@@ -82,12 +82,7 @@ a {
     padding: 0px;
 }
 
-#HashNumber {
-    width: 75%;
-    margin: auto;
-    word-wrap: break-word;
-    font-size: 0.8rem;
-}
+
 button {
     font-family: 'Jura', sans-serif;
 

@@ -9,16 +9,19 @@ class Blockchain:
 
     def __init__(self):
         self.chain = []  # init empty chain
+        self.transactions = []  # has to be before create block in order to include transactions in mined block
         self.create_block(proof=1, previous_hash='0')  # genesis block
+        self.nodes = set()  # nodes as a set
 
     def create_block(self, proof, previous_hash):
         """Create a single Block"""
         block = {'index': len(self.chain) + 1,  # def block index as a length of chain + 1
                  'timestamp_date': str(datetime.date.today()),
                  'timestamp_time': str(datetime.datetime.now().time()),
-                 # time when block was created - as a string for json format
                  'proof': proof,  # proof of work
-                 'previous_hash': previous_hash}  # previous block hash
+                 'previous_hash': previous_hash,
+                 'transactions': self.transactions}  # previous block hash
+        self.transactions = []  # emptying transaction list
         self.chain.append(block)  # add to blockchain list
         return block
 
@@ -114,7 +117,8 @@ def block_mining(blockchain):
         'timestamp_date': block['timestamp_date'],
         'timestamp_time': block['timestamp_time'],
         'proof': block['proof'],
-        'previous_hash': block['previous_hash']
+        'previous_hash': block['previous_hash'],
+        'transactions': block['transactions'],
         }
 
     return response
