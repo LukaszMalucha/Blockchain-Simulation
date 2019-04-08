@@ -12,13 +12,7 @@ $(".alert").delay(3000).fadeOut(200, function() {
 $(document).ready(function() {
     $('.sidenav').sidenav();
 
-    $('.modal').modal();
-
-    $('#closeModal').click(function(){
-        $('.modal').closeModal();
-    });
-
-
+     $('.modal').modal();
 
     $('.tooltipped').tooltip();
 
@@ -29,21 +23,13 @@ $(document).ready(function() {
         })
         .done(function(data) {
 
-            if (data.transactions.length >= 2){
+            if (data.transactions.length >= 1){
                 var transaction1 = data.transactions[0]['sender'] + ' sends ' + data.transactions[0]['amount'] + ' coins to ' + data.transactions[0]['receiver'];
                 var transaction2 = data.transactions[1]['sender'] + ' sends ' + data.transactions[1]['amount'] + ' coins to ' + data.transactions[1]['receiver'];
             }
-
-            else if (data.transactions.length == 1) {
-                var transaction1 = data.transactions[0]['sender'] + ' sends ' + data.transactions[0]['amount'] + ' coins to ' + data.transactions[0]['receiver'];
-                var transaction2 = "" ;
-
-            }
-
-
             else {
-                var transaction1 = "";
-                var transaction2 = "";
+                var transaction1 = ""
+                var transaction2 = ""
             }
 
             console.log(transaction1);
@@ -53,8 +39,10 @@ $(document).ready(function() {
             $('#HashNumber').text(data.previous_hash);
             $('#blockDate').text(data.timestamp_date);
             $('#blockTime').text(data.timestamp_time);
-            $('#transaction1').text(transaction1);
-            $('#transaction2').text(transaction2);
+            $('#transactions').append( '<div class="row plain-element row-transactions">' +
+                                                '<p class="transaction">'  + transaction1 + '</p>' +
+                                               '<p class="transaction">'  + transaction2 + '</p>');
+
 
             $('#minedBlock').fadeOut(300).fadeIn(300);
             $("#rowBlockchain").append('<div class="col-md-4">' +
@@ -75,34 +63,6 @@ $(document).ready(function() {
                                         + '</div>'
                                         + '</div>');
             });
-    });
-
-
-    $('form').on('submit', function(event){
-        $.ajax({
-                data : {
-				sender : $('#sender').val(),
-				receiver : $('#receiver').val(),
-				amount : $('#amount').val()
-                },
-                type : 'POST',
-                url : '/add_transaction'
-
-        })
-
-        .done(function(data){
-            console.log(data.message);
-
-
-
-
-
-        });
-        $('.modal').modal();
-        $('body').css({
-            overflow: 'visible'
-        });
-        event.preventDefault();
     });
 });
 

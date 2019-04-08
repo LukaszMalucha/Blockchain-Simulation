@@ -4,8 +4,15 @@
 {% block content %}
 
 <div class="row header">
+{% if message %}
+<div class="alert alert-info" role="alert">
 
+    {{ message }}
 </div>
+
+{% endif %}
+</div>
+
 <div class="dashboard-cards">
     <div class="row row-title">
         <h3>Build your Blockchain</h3>
@@ -39,21 +46,11 @@
                     <p><b>Mined at: </b> <span id="blockDate">2009-01-09</span></p>
                     <p><b> Time: </b><span id="blockTime">02:54:25.275350</span></p>
                     <p><b>Previous Hash:</b></p>
-                    <p id="HashNumber">a666b2501f212b9da4ff46e8fb675fc3cf03d15131dc4d869c032a1daf684907</p>
+                    <p class="hash_number" id="HashNumber">0</p>
                     <p id="blockTransactions"><b>Transactions:</b></p>
-                    <div class="row plain-element row-table">
-                        <table class="transactions-table" id="transactionTable">
-                            <tr>
-                                <th>Sender</th>
-                                <th>Reciever</th>
-                                <th>Amount</th>
-                            </tr>
-                            <tr>
-                                <td id="sender">Jillasdazsdasasdasd</td>
-                                <td id="receiver">Smith</td>
-                                <td id="amount">50</td>
-                            </tr>
-                        </table>
+                    <div class="row plain-element row-transactions">
+                        <p class="transaction" id="transaction1"> </p>
+                        <p class="transaction" id="transaction2"> </p>
                     </div>
                 </div>
             </div>
@@ -66,23 +63,19 @@
     </div>
 
     <div class="row row-cards" id="rowBlockchain">
-        <div class="col-md-3">
+        <div class="col-md-4">
             <div class="card card-block">
-                <div class="card-content white-text">
+                <div class="card-content">
                     <span class="card-title">Genesis Block</span>
                     <br>
-                    <p>Proof of Work: 1</p>
-                    <p>Mined at: 2009-01-09 </p>
-                    <p>Time: 02:54:25.275350 </p>
-                    <p>Previous Hash</p>
-                </div>
-                <div class="row plain-element">
-                    <div class="col-md-6 plain-element">
-                        <a class="btn btn-blockchain tooltipped" data-position="bottom" data-tooltip="asdasdas">Previous
-                            Hash</a>
-                    </div>
-                    <div class="col-md-6 plain-element">
-                        <a class="btn btn-blockchain" href="#">Transactions</a>
+                    <p><b>Proof of Work: </b><span>1</span></p>
+                    <p><b>Mined at: </b> <span>2009-01-09</span></p>
+                    <p><b> Time: </b><span>02:54:25.275350</span></p>
+                    <p><b>Previous Hash:</b></p>
+                    <p class="hash_number">0</p>
+                    <p><b>Transactions:</b></p>
+                    <div class="row plain-element row-transactions">
+
                     </div>
                 </div>
             </div>
@@ -91,30 +84,30 @@
 </div>
 
 <div id="modalTransaction" class="modal">
-    <form action="{{url_for('add_transaction') }}" method="POST" class="col s12">
+    <form class="col s12">
         <div class="card form-card">
             <div class="card-content">
                 <span class="card-title">Add Algorithm</span>
                 <br><br>
-                <div class="input-field col s12" id="field">
+                <div class="input-field col s12">
                     <i class="material-icons prefix">assignment</i>
-                    <input id="q_field" name="sender" type="text" maxlength="24" required>
+                    <input id="sender" name="sender" type="text" maxlength="24" required>
                     <label for="icon_prefix">Sender</label>
                 </div>
-                <div class="input-field col s12" id="field">
+                <div class="input-field col s12">
                     <i class="material-icons prefix">assignment</i>
-                    <input id="q_field" name="receiver" type="text" maxlength="24" required>
+                    <input id="receiver" name="receiver" type="text" maxlength="24" required>
                     <label for="icon_prefix">Receiver</label>
                 </div>
-                <div class="input-field col s12" id="field">
+                <div class="input-field col s12">
                     <i class="material-icons prefix">assignment</i>
-                    <input id="q_field" name="amount" type="number" style="color: white" required>
+                    <input id="amount" name="amount" type="number" style="color: white" min="1" required>
                     <label for="icon_prefix">Amount</label>
                 </div>
                 <div class="input-field col s12" style="height:25px">
                 </div>
             </div>
-            <button type="submit" class="btn-card"><span>Submit <i
+            <button type="submit" class="btn-card" id="modalClose"><span>Submit <i
                     class="far fa-arrow-alt-circle-right"></i></span>
             </button>
         </div>

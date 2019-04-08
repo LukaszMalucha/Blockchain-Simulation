@@ -46,11 +46,10 @@ def mine_block():
 
 @app.route('/add_transaction', methods=['POST'])
 def add_transaction():
-    if request.method == "POST":
-        index = blockchain.add_transaction(request.form['sender'], request.form['receiver'], request.form['amount'])
-        response = {'message': "Transaction will be added to Block {0}".format(index)}
-        return redirect(url_for('dashboard'))
-    return render_template('dashboard.html')
+    index = blockchain.add_transaction(request.form['sender'], request.form['receiver'], request.form['amount'])
+    response = {'message': "Transaction will be added to Block {0}".format(index)}
+    return jsonify(response), 200
+
 
 
 
