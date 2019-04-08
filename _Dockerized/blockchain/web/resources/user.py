@@ -60,7 +60,7 @@ class UserLogin(Resource):
             if user:
                 if check_password_hash(user.password, form.password.data):
                     session['current_user'] = user.email
-                    flash(f'You have successfully logged in as {user.email}', 'alert alert-success alert-user')
+                    flash('You have successfully logged in as '.format(user.email), 'alert alert-success alert-user')
                     login_user(user)
                     return redirect("/")
             else:
