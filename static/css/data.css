@@ -86,7 +86,7 @@
     width: 80%;
     border: 1px solid #515663;
     color: white;
-    margin-top: 20px;
+    margin-bottom: 15px;
 
 
 }
@@ -146,6 +146,10 @@
     color: red;
 }
 
+#targetValue {
+    word-wrap: break-word;
+}
+
 /*------------------------------------------------------------------------------
     BUTTONS
 ------------------------------------------------------------------------------*/
@@ -182,36 +186,6 @@
     box-shadow: none;
 }
 
-
-
-/*------------------------------------------------------------------------------
-    TABLES
-------------------------------------------------------------------------------*/
-
-
-.transactions-table {
-
-    overflow: auto;
-
-}
-
-
-.transactions-table th,
-.transactions-table td{
-    padding: 5px 5px 5px 0px;
-    font-size: 0.8rem;
-    color: white;
-    font-weight: normal;
-
-}
-
-.transactions-table td {
-    font-size: 0.7rem;
-}
-
-.transactions-table tr{
-    border-bottom: none;
-}
 
 
 
@@ -261,36 +235,59 @@ input[type="text"]:not(.browser-default) {
 ------------------------------------------------------------------------------*/
 
 
-@media(max-width:1900px) {
-
-
-}
 
 
 @media(max-width:1700px) {
+    .card-block,
+    .card-function {
+        width: 100%;
+    }
+
+    .card-function .card-title {
+        font-size: 18px;
+    }
+
+    .hash_number {
+        height: 50px;
+
+    }
+
+
+
+    .row-title,
+    .row-cards {
+        width: 100%;
+    }
+
 
 
 }
 
 @media(min-width:992px) {
 
-}
-
-@media(max-width:992px) {
 
 
 
-}
-
-
-
-
-@media(max-width:695px) {
 
 }
 
 
 @media(max-width:520px) {
+
+    .card-block,
+    .card-function {
+        width: 100%;
+    }
+
+    .card-function .card-stacked {
+        padding-top: 10%;
+        font-size: 80%;
+    }
+
+    .card-function .card-title {
+        font-size: 16px;
+    }
+
 
 }
 

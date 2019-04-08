@@ -76,12 +76,10 @@
 
     <!-- MOBILE -->
     <ul class="sidenav" id="mobile-demo">
-        <li><a href=""><i class="fas fa-code-branch"></i>
-        Algorithms</a></li>
-        <li><a href=""><i class="fab fa-python"></i> Converter</a>
+        <li><a  target="_blank" href="https://www.linkedin.com/in/lukaszmalucha/"><i class="fab fa-linkedin"></i>
+            Linkedin</a></li>
+        <li><a target="_blank" href="https://github.com/LukaszMalucha/Blockchain-Simulation/"><i class="fab fa-github"></i>GitHub</a>
         </li>
-        <li><a target="_blank" href="https://github.com/LukaszMalucha/Cat-vs.-Dog-Classifier/"><i
-                class="fab fa-github"></i> GitHub</a></li>
         {% if current_user.email != "Guest" %}
         <li><a href="{{ url_for('userlogout') }}" id="dropdown_link"><i class="fas fa-sign-out-alt"></i> Log Out</a>
         </li>

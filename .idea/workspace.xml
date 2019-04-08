@@ -3,121 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="84bc7d1c-6956-487f-a713-0e77f57ba048" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/bits_to_hex.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/blockchain.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/leancoin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/leancoins_ico/leancoins_ico.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/nodes.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/bootstrap/css/bootstrap-theme.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/bootstrap/css/bootstrap-theme.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/bootstrap/css/bootstrap-theme.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/bootstrap/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/bootstrap/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/bootstrap/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/bootstrap/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/bootstrap/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/bootstrap/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/bootstrap/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/bootstrap/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/bootstrap/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/bootstrap/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/bootstrap/js/npm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/css/custom-styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/css/font-awesome.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/css/materialize.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/css/signup.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/font-awesome/css/fa-brands.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/font-awesome/css/fa-brands.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/font-awesome/css/fa-regular.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/font-awesome/css/fa-regular.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/font-awesome/css/fa-solid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/font-awesome/css/fa-solid.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/font-awesome/css/fontawesome-all.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/font-awesome/css/fontawesome-all.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/font-awesome/css/fontawesome.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/font-awesome/css/fontawesome.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/font-awesome/js/fa-brands.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/font-awesome/js/fa-brands.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/font-awesome/js/fa-regular.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/font-awesome/js/fa-regular.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/font-awesome/js/fa-solid.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/font-awesome/js/fa-solid.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/font-awesome/js/fa-v4-shims.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/font-awesome/js/fa-v4-shims.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/font-awesome/js/fontawesome-all.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/font-awesome/js/fontawesome-all.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/font-awesome/js/fontawesome.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/font-awesome/js/fontawesome.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/font-awesome/webfonts/fa-brands-400.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/font-awesome/webfonts/fa-brands-400.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/font-awesome/webfonts/fa-brands-400.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/font-awesome/webfonts/fa-brands-400.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/font-awesome/webfonts/fa-brands-400.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/font-awesome/webfonts/fa-regular-400.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/font-awesome/webfonts/fa-regular-400.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/font-awesome/webfonts/fa-regular-400.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/font-awesome/webfonts/fa-regular-400.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/font-awesome/webfonts/fa-regular-400.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/font-awesome/webfonts/fa-solid-900.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/font-awesome/webfonts/fa-solid-900.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/font-awesome/webfonts/fa-solid-900.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/font-awesome/webfonts/fa-solid-900.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/font-awesome/webfonts/fa-solid-900.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/img/background.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/js/dataTables/dataTables.bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/js/dataTables/dataTables.bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/js/dataTables/jquery.dataTables.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/js/jquery-1.10.2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/js/jquery.metisMenu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/js/materialize.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/js/morris/morris-0.4.3.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/js/morris/morris.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/js/morris/raphael-2.1.0.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/materialize/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/materialize/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/materialize/css/materialize.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/materialize/css/materialize.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/materialize/fonts/roboto/Roboto-Bold.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/materialize/fonts/roboto/Roboto-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/materialize/fonts/roboto/Roboto-Bold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/materialize/fonts/roboto/Roboto-Bold.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/materialize/fonts/roboto/Roboto-Light.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/materialize/fonts/roboto/Roboto-Light.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/materialize/fonts/roboto/Roboto-Light.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/materialize/fonts/roboto/Roboto-Light.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/materialize/fonts/roboto/Roboto-Medium.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/materialize/fonts/roboto/Roboto-Medium.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/materialize/fonts/roboto/Roboto-Medium.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/materialize/fonts/roboto/Roboto-Medium.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/materialize/fonts/roboto/Roboto-Regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/materialize/fonts/roboto/Roboto-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/materialize/fonts/roboto/Roboto-Regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/materialize/fonts/roboto/Roboto-Regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/materialize/fonts/roboto/Roboto-Thin.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/materialize/fonts/roboto/Roboto-Thin.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/materialize/fonts/roboto/Roboto-Thin.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/materialize/fonts/roboto/Roboto-Thin.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/materialize/js/materialize.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/static/materialize/js/materialize.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/templates/add_transaction.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/templates/base.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/templates/blockchain.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/templates/converter.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLD/transaction.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/database.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/blockchain.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/blockchain.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/resources/user.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/data.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/data.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/forms.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/forms.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/navbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/custom-scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/custom-scripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/old.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -135,6 +23,29 @@
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/css/data.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="309">
+              <caret line="86" column="30" lean-forward="true" selection-start-line="86" selection-start-column="30" selection-end-line="86" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="81" column="13" selection-start-line="81" selection-start-column="13" selection-end-line="81" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -173,23 +84,23 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/css/forms.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="68" column="17" lean-forward="true" selection-start-line="68" selection-start-column="17" selection-end-line="68" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/dashboard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="95" column="29" selection-start-line="95" selection-start-column="29" selection-end-line="95" selection-end-column="29" />
+            <state relative-caret-position="388">
+              <caret line="111" column="39" selection-start-line="111" selection-start-column="39" selection-end-line="111" selection-end-column="50" />
               <folding>
                 <element signature="n#style#0;n#input#0;n#div#2;n#div#0;n#div#0;n#form#0;n#div#2;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#form#0;n#div#2;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/css/navbar.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -229,6 +140,7 @@
       <find>transaction wi</find>
       <find>form</find>
       <find>btn</find>
+      <find>form-</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -253,13 +165,13 @@
         <option value="$PROJECT_DIR$/OLD/templates/converter.html" />
         <option value="$PROJECT_DIR$/models/blockchain.py" />
         <option value="$PROJECT_DIR$/app.py" />
-        <option value="$PROJECT_DIR$/static/css/data.css" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
-        <option value="$PROJECT_DIR$/static/css/navbar.css" />
         <option value="$PROJECT_DIR$/static/css/forms.css" />
         <option value="$PROJECT_DIR$/static/js/custom-scripts.js" />
         <option value="$PROJECT_DIR$/resources/user.py" />
+        <option value="$PROJECT_DIR$/static/css/navbar.css" />
         <option value="$PROJECT_DIR$/templates/dashboard.html" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/static/css/data.css" />
       </list>
     </option>
   </component>
@@ -369,9 +281,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -382,7 +293,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.2665222" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.2665222" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -527,13 +438,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/data.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1326">
-          <caret line="78" column="1" selection-start-line="78" selection-start-column="1" selection-end-line="78" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/OLD/templates/converter.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -561,34 +465,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="51" column="54" lean-forward="true" selection-start-line="51" selection-start-column="54" selection-end-line="51" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/navbar.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="230" column="23" selection-start-line="230" selection-start-column="23" selection-end-line="230" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/404.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="40" column="35" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="66" column="46" selection-start-line="66" selection-start-column="46" selection-end-line="66" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -605,20 +485,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/forms.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="68" column="17" lean-forward="true" selection-start-line="68" selection-start-column="17" selection-end-line="68" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/custom-scripts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="54" lean-forward="true" selection-start-line="4" selection-start-column="54" selection-end-line="4" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/user.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-102">
@@ -629,16 +495,64 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="81" column="13" selection-start-line="81" selection-start-column="13" selection-end-line="81" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/forms.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-374">
+          <caret line="68" column="17" lean-forward="true" selection-start-line="68" selection-start-column="17" selection-end-line="68" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="95" column="29" selection-start-line="95" selection-start-column="29" selection-end-line="95" selection-end-column="29" />
+        <state relative-caret-position="388">
+          <caret line="111" column="39" selection-start-line="111" selection-start-column="39" selection-end-line="111" selection-end-column="50" />
           <folding>
             <element signature="n#style#0;n#input#0;n#div#2;n#div#0;n#div#0;n#form#0;n#div#2;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#form#0;n#div#2;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="66" column="46" selection-start-line="66" selection-start-column="46" selection-end-line="66" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/custom-scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="54" lean-forward="true" selection-start-line="4" selection-start-column="54" selection-end-line="4" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/navbar.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/data.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="86" column="30" lean-forward="true" selection-start-line="86" selection-start-column="30" selection-end-line="86" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

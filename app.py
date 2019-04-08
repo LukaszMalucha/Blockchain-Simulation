@@ -1,10 +1,7 @@
 import os
+# import env
 
-from werkzeug.utils import redirect
-
-import env
-
-from flask import Flask, render_template, jsonify, request, url_for
+from flask import Flask, render_template, jsonify, request
 from flask_bootstrap import Bootstrap
 from flask_restful import Api
 
@@ -98,8 +95,8 @@ if __name__ == '__main__':
         def create_tables():
             db.create_all()
 
-    app.run(debug=True)
+    # app.run(debug=True)
 
 # Heroku
-#     port = int(os.environ.get('PORT', 5000))
-#     app.run(host='0.0.0.0', port=port)
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port)
