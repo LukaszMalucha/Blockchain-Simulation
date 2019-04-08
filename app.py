@@ -9,7 +9,7 @@ from flask_bootstrap import Bootstrap
 from flask_restful import Api
 
 from resources.user import UserRegister, UserLogin, UserLogout, login_manager
-from models.blockchain import Blockchain, block_mining
+from models.blockchain import Blockchain, block_mining, bits_to_target
 
 # Settings
 app = Flask(__name__)
@@ -35,25 +35,45 @@ blockchain = Blockchain()
 
 @app.route('/', methods=['GET', 'POST'])
 def dashboard():
+    """Homepage"""
     return render_template("dashboard.html")
 
 
 @app.route('/mine_block', methods=['POST'])
 def mine_block():
+    """Mine a Block"""
     response = block_mining(blockchain)
     return jsonify(response), 200
 
 
 @app.route('/add_transaction', methods=['POST'])
 def add_transaction():
+    """Add transaction to the next block"""
     index = blockchain.add_transaction(request.form['sender'], request.form['receiver'], request.form['amount'])
-    response = {'message': "Transaction will be added to Block {0}".format(index)}
+    response = {'message': "Transaction will be added to Block #{0}".format(index)}
     return jsonify(response), 200
 
 
+@app.route('/validation_check', methods=['POST'])
+def validation_check():
+    """Check if Blockchain was not tampered"""
+    is_valid = blockchain.is_chain_valid(blockchain.chain)
+    if is_valid:
+        response = {'message': 'Blockchain is valid',
+                    'chain': blockchain.chain,
+                    'length': len(blockchain.chain)}
+    else:
+        response = {'error': 'There are errors in the Blockchain',
+                    'chain': blockchain.chain,
+                    'length': len(blockchain.chain)}
+    return jsonify(response), 200
 
 
-
+@app.route('/converter', methods=['GET', 'POST'])
+def converter():
+    dec = int(request.form['bits'], 16)
+    response = bits_to_target(dec)
+    return jsonify(response), 200
 
 # Error Handlers
 @app.errorhandler(404)

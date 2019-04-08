@@ -2,7 +2,7 @@
 $('.dropdown-trigger').dropdown();
 
 
-$(".alert").delay(3000).fadeOut(200, function() {
+$(".alert-user").delay(3000).fadeOut(200, function() {
     $(this).alert('close');
 });
 
@@ -10,6 +10,7 @@ $(".alert").delay(3000).fadeOut(200, function() {
 
 
 $(document).ready(function() {
+
     $('.sidenav').sidenav();
 
     $('.modal').modal();
@@ -46,8 +47,6 @@ $(document).ready(function() {
                 var transaction2 = "";
             }
 
-            console.log(transaction1);
-            console.log(transaction2);
             $('#blockIndex').text("Block #" + data.index);
             $('#proofOfWork').text(data.proof);
             $('#HashNumber').text(data.previous_hash);
@@ -75,10 +74,28 @@ $(document).ready(function() {
                                         + '</div>'
                                         + '</div>');
             });
+
     });
 
+    $('.validationCheck').on('click', function(){
+        $.ajax({
+                    type : 'POST',
+                    url : '/validation_check'
+        })
+        .done(function(data) {
+            if (data.error) {
+                $('#messageError').text(data.message + '. Current length: ' + data.length).show().fadeOut(3000);
+                $('#messageAlert').hide();
+            }
+            else {
+                $('#messageAlert').text(data.message + '. Current length: ' + data.length).show().fadeOut(3000);
+                $('#messageError').hide();
+            }
+        });
 
-    $('form').on('submit', function(event){
+    });
+
+    $('#formTransaction').on('submit', function(event){
         $.ajax({
                 data : {
 				sender : $('#sender').val(),
@@ -91,12 +108,8 @@ $(document).ready(function() {
         })
 
         .done(function(data){
-            console.log(data.message);
-
-
-
-
-
+            $('#messageAlert').text(data.message).show().fadeOut(3000);
+            $('#messageError').hide();
         });
         $('.modal').modal();
         $('body').css({

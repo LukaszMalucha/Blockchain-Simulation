@@ -83,10 +83,11 @@
 .card-function {
     background: #373d49;
     border-radius: 5px;
-    width: 100%;
+    width: 80%;
     border: 1px solid #515663;
     color: white;
-    margin-top: 20px;
+    margin-top: 25px;
+
 
 }
 
@@ -107,7 +108,7 @@
 }
 
 .card-function .card-stacked {
-    padding-top: 10%;
+    padding-top: 8%;
 }
 
 .modal {
@@ -130,6 +131,19 @@
 
 .transaction {
     font-size: 0.8rem;
+}
+
+.alert-message {
+    background: #373d49;
+    color: #FFCB9A;
+    text-align: center;
+    font-size: 16px;
+    display: none;
+    height: 50px;
+}
+
+#messageError {
+    color: red;
 }
 
 /*------------------------------------------------------------------------------
