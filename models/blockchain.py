@@ -124,9 +124,9 @@ def block_mining(blockchain):
     return response
 
 
-def bits_to_target(dec):
+def bits_to_target(bits):
 
-    true_hex = hex(dec)[2:]
+    true_hex = hex(bits)[2:]
     first_two = true_hex[:2]
     the_rest = true_hex[2:]
     first_two_decimal = int(first_two, 16)

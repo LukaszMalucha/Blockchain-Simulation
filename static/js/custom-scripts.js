@@ -56,7 +56,7 @@ $(document).ready(function() {
             $('#transaction2').text(transaction2);
 
             $('#minedBlock').fadeOut(300).fadeIn(300);
-            $("#rowBlockchain").append('<div class="col-md-4">' +
+            $("#rowBlockchain").prepend('<div class="col-md-4">' +
                                         '<div class="card card-block">' +
                                         '<div class="card-content">' +
                                             '<span class="card-title">' + "Block #" + data.index + '</span>'
@@ -115,6 +115,22 @@ $(document).ready(function() {
         $('body').css({
             overflow: 'visible'
         });
+        event.preventDefault();
+    });
+
+
+    $('#formConverter').on('submit', function(event){
+        $.ajax({
+                data : {
+				bits : $('#bits').val(),
+                },
+                type : 'POST',
+                url : '/converter'
+
+        })
+         .done(function(data){
+            $('#targetValue').text(data.target);
+         });
         event.preventDefault();
     });
 });

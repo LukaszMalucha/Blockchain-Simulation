@@ -188,23 +188,23 @@ nav ul a {
 
 .dropdown-content li>a {
     color: white;
-    background-color: #191919;
+    background-color: #373d49;
 }
 
 .dropdown-content li>fa {
-    color: #191919;
+    color: #373d49;
 }
 
 
 .navbar-right>a:hover,
 .navbar-right>a:focus {
     background: transparent;
-    color: #e5ebef;
+    color: #373d49;
 }
 
 .navbar-default .navbar-brand:hover
 .navbar-default .navbar-brand:focus {
-    color: #e5ebef;
+    color: #373d49;
 }
 
  nav ul a:hover {
@@ -228,7 +228,7 @@ nav ul a {
 }
 
 nav ul li:hover, nav ul li:active {
-    background: #222a32;
+    background: #373d49;
 }
 
 .sidenav li:hover {

@@ -31,7 +31,7 @@ class UserRegister(Resource):
         form = RegisterForm()
         if form.validate_on_submit():
             if UserModel.find_by_email(form.email.data) or UserModel.find_by_username(form.username.data):
-                flash(f'User already exist', 'alert alert-danger')
+                flash(f'User already exist', 'alert alert-danger alert-user')
                 return Response(render_template('user/register.html', form=form))
 
             hashed_password = generate_password_hash(form.password.data,
@@ -60,11 +60,11 @@ class UserLogin(Resource):
             if user:
                 if check_password_hash(user.password, form.password.data):
                     session['current_user'] = user.email
-                    flash(f'You have successfully logged in as {user.email}', 'alert alert-success')
+                    flash(f'You have successfully logged in as {user.email}', 'alert alert-success alert-user')
                     login_user(user)
                     return redirect("/")
             else:
-                flash(u'Invalid Email or Password provided', 'alert alert-danger')
+                flash(u'Invalid Email or Password provided', 'alert alert-danger alert-user')
 
         return Response(render_template('user/login.html', form=form))
 

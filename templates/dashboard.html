@@ -4,13 +4,12 @@
 {% block content %}
 
 <div class="row header">
-<div id="messageAlert" class="alert alert-message" role="alert">
-</div>
-<div id="messageError" class="alert alert-message" role="alert">
+    <div id="messageAlert" class="alert alert-message" role="alert">
+    </div>
+    <div id="messageError" class="alert alert-message" role="alert">
 
+    </div>
 </div>
-</div>
-
 
 
 <div class="dashboard-cards">
@@ -57,8 +56,8 @@
                     <p class="hash_number" id="HashNumber">0</p>
                     <p id="blockTransactions"><b>Transactions:</b></p>
                     <div class="row plain-element row-transactions">
-                        <p class="transaction" id="transaction1"> </p>
-                        <p class="transaction" id="transaction2"> </p>
+                        <p class="transaction" id="transaction1"></p>
+                        <p class="transaction" id="transaction2"></p>
                     </div>
                 </div>
             </div>
@@ -91,18 +90,37 @@
     </div>
     <div class="row row-title">
         <h3>Blockchain Utilities</h3>
-        <p>&nbsp;&nbsp;<i class="fab fa-ethereum"></i> &nbsp; Useful Tools</p>
+        <p>&nbsp;&nbsp;<i class="fab fa-ethereum"></i> &nbsp; Useful Blockchain Tools</p>
     </div>
-    <div class="row row-cards" id="rowBlockchain">
-        <div class="col-md-6">
-             <form class="col s12" id="formCoverter">
-
-             </form>
+    <div class="row row-cards">
+        <div class="col-md-8">
+            <form class="col s12" id="formConverter">
+                <div class="card card-block">
+                    <div class="card-content">
+                        <span class="card-title">Bits To Target Converter</span>
+                        <br>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="bits" name="bits" type="number" style="color: white" required>
+                                <label for="bits">Enter Bits Number</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <b>Target Value</b>
+                                <br><br>
+                                <p id="targetValue"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-card"><span>Submit <i
+                        class="far fa-arrow-alt-circle-right"></i></span>
+                    </button>
+                </div>
+            </form>
         </div>
     </div>
-
 </div>
-
 
 
 <div id="modalTransaction" class="modal">
@@ -114,17 +132,17 @@
                 <div class="input-field col s12">
                     <i class="material-icons prefix">assignment</i>
                     <input id="sender" name="sender" type="text" maxlength="24" required>
-                    <label for="icon_prefix">Sender</label>
+                    <label for="sender">Sender</label>
                 </div>
                 <div class="input-field col s12">
                     <i class="material-icons prefix">assignment</i>
                     <input id="receiver" name="receiver" type="text" maxlength="24" required>
-                    <label for="icon_prefix">Receiver</label>
+                    <label for="receiver">Receiver</label>
                 </div>
                 <div class="input-field col s12">
                     <i class="material-icons prefix">assignment</i>
                     <input id="amount" name="amount" type="number" style="color: white" min="1" required>
-                    <label for="icon_prefix">Amount</label>
+                    <label for="amount">Amount</label>
                 </div>
                 <div class="input-field col s12" style="height:25px">
                 </div>

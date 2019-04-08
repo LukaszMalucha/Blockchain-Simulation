@@ -69,10 +69,10 @@ def validation_check():
     return jsonify(response), 200
 
 
-@app.route('/converter', methods=['GET', 'POST'])
+@app.route('/converter', methods=['POST'])
 def converter():
-    dec = int(request.form['bits'], 16)
-    response = bits_to_target(dec)
+    bits = int(request.form['bits'], 16)
+    response = bits_to_target(bits)
     return jsonify(response), 200
 
 # Error Handlers
