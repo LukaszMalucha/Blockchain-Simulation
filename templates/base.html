@@ -28,11 +28,6 @@
     <!-- jQuery-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <script src="https://surveyjs.azureedge.net/1.0.78/survey.jquery.js"></script>
-    <link href="https://surveyjs.azureedge.net/1.0.78/survey.css" type="text/css" rel="stylesheet"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.1.0/velocity.min.js"></script>
-
-
     {% block extrahead %}{% endblock %}
 
 </head>
@@ -50,8 +45,8 @@
                                                                                                 alt="Creo Labs Logo"/></a>
         </div>
         <ul class="nav navbar-top-links navbar-right">
-            <li><a class="nav-link" target="_blank" href="https://www.linkedin.com/in/lukaszmalucha/"><i class="fab fa-linkedin"></i> <b>
-                Linkedin</b></a></li>
+            <li><a class="nav-link" href="{{url_for('download_code', code_name='leancoin_ico') }}"><i class="fab fa-ethereum"></i> <b>
+                Leancoin ICO</b></a></li>
             <li><a class="nav-link" target="_blank" href="https://github.com/LukaszMalucha/Blockchain-Simulation/"><i class="fab fa-github"></i> <b>GitHub</b></a>
             </li>
             <li><a class='dropdown-trigger nav-link' href='#' data-target='dropdown1' id="user_dropdown"><i
@@ -76,8 +71,8 @@
 
     <!-- MOBILE -->
     <ul class="sidenav" id="mobile-demo">
-        <li><a  target="_blank" href="https://www.linkedin.com/in/lukaszmalucha/"><i class="fab fa-linkedin"></i>
-            Linkedin</a></li>
+        <li><a href="{{url_for('download_code', code_name='leancoin_ico') }}"><i class="fab fa-ethereum"></i>
+            Leancoin ICO</a></li>
         <li><a target="_blank" href="https://github.com/LukaszMalucha/Blockchain-Simulation/"><i class="fab fa-github"></i>GitHub</a>
         </li>
         {% if current_user.email != "Guest" %}
@@ -104,7 +99,7 @@
 </div>
 
 <div class="footer">
-    <p> Powered by CreoLabs &trade;</p>
+    <p> Powered by Creo Labs &trade;</p>
 </div>
 
 

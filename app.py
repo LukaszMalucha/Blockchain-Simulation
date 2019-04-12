@@ -1,7 +1,7 @@
 import os
 # import env
 
-from flask import Flask, render_template, jsonify, request
+from flask import Flask, render_template, jsonify, request, send_file
 from flask_bootstrap import Bootstrap
 from flask_restful import Api
 
@@ -68,9 +68,19 @@ def validation_check():
 
 @app.route('/converter', methods=['POST'])
 def converter():
+    """Bits to Target"""
     bits = int(request.form['bits'], 16)
     response = bits_to_target(bits)
     return jsonify(response), 200
+
+
+@app.route('/download_code/<code_name>', methods=['GET'])
+def download_code(code_name):
+    """Leancoin ICO"""
+    my_path = os.path.abspath(os.path.dirname(__file__))
+    code = os.path.join(my_path, "static/leancoin_ico/{}.sol".format(code_name))
+    return send_file(code, as_attachment=True)
+
 
 # Error Handlers
 @app.errorhandler(404)
