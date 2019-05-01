@@ -1,6 +1,6 @@
 # Blockchain Environment Simulation
 
-#### [Visit App on Heroku](https://blockchainsimulation1.herokuapp.com/)
+#### [Visit App on Heroku](https://blockchainsimulation.herokuapp.com/)
 
 <br>
 
