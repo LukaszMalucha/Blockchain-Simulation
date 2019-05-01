@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Blockchain Simulation</title>
+    <meta name="Description"
+          content="Flask App simulation of a Blockchain. Great for getting your head around basic concepts of a Technology.">
+    <meta name="KeyWords" content="proof of work, blockchain, ico, mining block, flask">
+    <link rel="shortcut icon" type="image/png" href="{{url_for('static', filename='img/septellar.png')}}"/>
     <!-- Material Icons-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Bootstrap-->
@@ -28,6 +32,18 @@
     <!-- jQuery-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138397523-4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-138397523-4');
+
+    </script>
+
+
     {% block extrahead %}{% endblock %}
 
 </head>
@@ -41,13 +57,15 @@
     <nav class="navbar navbar-default top-navbar" role="navigation">
         <div class="navbar-header">
             <a class="navbar-brand company-logo" href="{{ url_for('dashboard') }}"><img class="company-logo"
-                                                                                                src="/static/img/logo-white.png"
-                                                                                                alt="Logo"/></a>
+                                                                                        src="/static/img/logo-white.png"
+                                                                                        alt="Logo"/></a>
         </div>
         <ul class="nav navbar-top-links navbar-right">
-            <li><a class="nav-link" href="{{url_for('download_code', code_name='leancoin_ico') }}"><i class="fab fa-ethereum"></i> <b>
+            <li><a class="nav-link" href="{{url_for('download_code', code_name='leancoin_ico') }}"><i
+                    class="fab fa-ethereum"></i> <b>
                 Leancoin ICO</b></a></li>
-            <li><a class="nav-link" target="_blank" href="https://github.com/LukaszMalucha/Blockchain-Simulation/"><i class="fab fa-github"></i> <b>GitHub</b></a>
+            <li><a class="nav-link" target="_blank" href="https://github.com/LukaszMalucha/Blockchain-Simulation/"><i
+                    class="fab fa-github"></i> <b>GitHub</b></a>
             </li>
             <li><a class='dropdown-trigger nav-link' href='#' data-target='dropdown1' id="user_dropdown"><i
                     class="fas fa-caret-down"></i><b>{{ current_user.email }} </b></a></li>
@@ -73,7 +91,8 @@
     <ul class="sidenav" id="mobile-demo">
         <li><a href="{{url_for('download_code', code_name='leancoin_ico') }}"><i class="fab fa-ethereum"></i>
             Leancoin ICO</a></li>
-        <li><a target="_blank" href="https://github.com/LukaszMalucha/Blockchain-Simulation/"><i class="fab fa-github"></i>GitHub</a>
+        <li><a target="_blank" href="https://github.com/LukaszMalucha/Blockchain-Simulation/"><i
+                class="fab fa-github"></i>GitHub</a>
         </li>
         {% if current_user.email != "Guest" %}
         <li><a href="{{ url_for('userlogout') }}" id="dropdown_link"><i class="fas fa-sign-out-alt"></i> Log Out</a>
