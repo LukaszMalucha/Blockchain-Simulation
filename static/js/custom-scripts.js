@@ -2,7 +2,7 @@
 $('.dropdown-trigger').dropdown();
 
 
-$(".alert-user").delay(3000).fadeOut(200, function() {
+$(".alert-user").delay(3000).fadeOut(400, function() {
     $(this).alert('close');
 });
 

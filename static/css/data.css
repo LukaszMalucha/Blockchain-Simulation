@@ -32,7 +32,7 @@
 .row-cards {
     width: 70%;
     text-align: center;
-    padding: 4% 0% 4% 0%;
+    padding: 1% 0% 1% 0%;
 }
 
 .row-transactions {
@@ -138,8 +138,11 @@
     color: #FFCB9A;
     text-align: center;
     font-size: 16px;
+    position: absolute;
     display: none;
-    height: 50px;
+    top: 10px;
+    width: 100%;
+
 }
 
 #messageError {
@@ -187,8 +190,6 @@
 }
 
 
-
-
 /*------------------------------------------------------------------------------
     FORMS
 ------------------------------------------------------------------------------*/
@@ -226,10 +227,6 @@ input[type="text"]:not(.browser-default) {
 
 
 
-
-
-
-
 /*------------------------------------------------------------------------------
     MEDIA QUERIES
 ------------------------------------------------------------------------------*/
@@ -253,19 +250,21 @@ input[type="text"]:not(.browser-default) {
     }
 
 
-
     .row-title,
     .row-cards {
         width: 100%;
     }
 
 
-
 }
 
-@media(min-width:992px) {
+@media(max-width:992px) {
 
-
+    .modal {
+        width: 50%;
+        background: transparent;
+        height: 470px;
+    }
 
 
 
@@ -286,6 +285,9 @@ input[type="text"]:not(.browser-default) {
 
     .card-function .card-title {
         font-size: 16px;
+    }
+    .modal {
+        width: 80%;
     }
 
 
