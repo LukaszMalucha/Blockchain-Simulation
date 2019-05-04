@@ -25,6 +25,14 @@ class Blockchain:
         self.chain.append(block)  # add to blockchain list
         return block
 
+    def reset_chain(self):
+        self.chain = []
+        self.transactions = []
+        self.create_block(proof=1, previous_hash='0')
+        self.nodes = set()
+        # return self.chain[:len(self.chain)-1]
+        return self.chain
+
     def get_previous_block(self):
         """Get a previous Block"""
         return self.chain[-1]

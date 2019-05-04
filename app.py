@@ -33,6 +33,7 @@ blockchain = Blockchain()
 @app.route('/', methods=['GET', 'POST'])
 def dashboard():
     """Homepage"""
+    blockchain.reset_chain()
     return render_template("dashboard.html")
 
 
