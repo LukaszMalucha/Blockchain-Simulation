@@ -64,9 +64,6 @@
             <li><a class="nav-link" href="{{url_for('download_code', code_name='leancoin_ico') }}"><i
                     class="fab fa-ethereum"></i> <b>
                 Leancoin ICO</b></a></li>
-            <li><a class="nav-link" target="_blank" href="https://github.com/LukaszMalucha/Blockchain-Simulation/"><i
-                    class="fab fa-github"></i> <b>GitHub</b></a>
-            </li>
             <li><a class='dropdown-trigger nav-link' href='#' data-target='dropdown1' id="user_dropdown"><i
                     class="fas fa-caret-down"></i><b>{{ current_user.email }} </b></a></li>
             <li><a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons" id="trigger">menu</i></a>
@@ -91,9 +88,6 @@
     <ul class="sidenav" id="mobile-demo">
         <li><a href="{{url_for('download_code', code_name='leancoin_ico') }}"><i class="fab fa-ethereum"></i>
             Leancoin ICO</a></li>
-        <li><a target="_blank" href="https://github.com/LukaszMalucha/Blockchain-Simulation/"><i
-                class="fab fa-github"></i>GitHub</a>
-        </li>
         {% if current_user.email != "Guest" %}
         <li><a href="{{ url_for('userlogout') }}" id="dropdown_link"><i class="fas fa-sign-out-alt"></i> Log Out</a>
         </li>
