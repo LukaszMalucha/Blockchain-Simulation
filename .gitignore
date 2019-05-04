@@ -5,3 +5,4 @@ geocoder.md
 __pycache__?
 venv/*
 .idea/*
+analytics.txt
