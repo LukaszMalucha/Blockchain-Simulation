@@ -14,7 +14,14 @@
 
 <div class="dashboard-cards">
     <div class="row row-title">
-        <h3>Build your Blockchain</h3>
+        <div class="box">
+            <h3>Build your Blockchain</h3>
+            <form action="{{url_for('download_code', code_name='leancoin_ico') }}" method="GET"
+                  id="rate-form"
+                  enctype="multipart/form-data">
+                <button type="Download" class="btn button-inline">ICO</button>
+            </form>
+        </div>
         <p>&nbsp;&nbsp;<i class="fab fa-ethereum"></i> &nbsp; Use one of the functions available below</p>
     </div>
     <div class="row row-cards">
