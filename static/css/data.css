@@ -237,7 +237,7 @@ input[type="text"]:not(.browser-default) {
 @media(max-width:1700px) {
     .card-block,
     .card-function {
-        width: 100%;
+        width: 80%;
     }
 
     .card-function .card-title {
