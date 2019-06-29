@@ -14,21 +14,14 @@
 
 <div class="dashboard-cards">
     <div class="row row-title">
-        <div class="box">
             <h3>Build your Blockchain</h3>
-            <form action="{{url_for('download_code', code_name='leancoin_ico') }}" method="GET"
-                  id="rate-form"
-                  enctype="multipart/form-data">
-                <button type="Download" class="btn button-inline">ICO</button>
-            </form>
-        </div>
         <p>&nbsp;&nbsp;<i class="fab fa-ethereum"></i> &nbsp; Use one of the functions available below</p>
     </div>
     <div class="row row-cards">
-        <div class="col-md-4">
+        <div class="col-md-3">
             <button class="card horizontal card-function blockMining">
                 <div class="card-image">
-                    <i class="fab fa-3x fa-ethereum"></i>
+                    <i class="fab fa-2x fa-ethereum"></i>
                 </div>
                 <div class="card-stacked">
                     <span class="card-title">Mine Block</span>
@@ -36,7 +29,7 @@
             </button>
             <button data-target="modalTransaction" class="card horizontal card-function modal-trigger">
                 <div class="card-image">
-                    <i class="fab fa-3x fa-btc"></i>
+                    <i class="fab fa-2x fa-btc"></i>
                 </div>
                 <div class="card-stacked">
                     <span class="card-title">Add Transaction</span>
@@ -44,12 +37,23 @@
             </button>
             <button class="card horizontal card-function validationCheck">
                 <div class="card-image">
-                    <i class="fas fa-3x fa-check"></i>
+                    <i class="fas fa-2x fa-check"></i>
                 </div>
                 <div class="card-stacked">
                     <span class="card-title">Validation Check</span>
                 </div>
             </button>
+            <form action="{{url_for('download_code', code_name='leancoin_ico') }}" method="GET" id="rate-form"
+                  enctype="multipart/form-data">
+                <button type="Download" class="card horizontal card-function">
+                    <div class="card-image">
+                       <i class="fas fa-2x fa-file-contract"></i>
+                    </div>
+                    <div class="card-stacked">
+                        <span class="card-title">LeanCoin ICO</span>
+                    </div>
+                </button>
+            </form>
         </div>
         <div class="col-md-4">
             <div class="card card-block" id="minedBlock">
@@ -121,7 +125,7 @@
                         </div>
                     </div>
                     <button type="submit" class="btn-card"><span>Submit <i
-                        class="far fa-arrow-alt-circle-right"></i></span>
+                            class="far fa-arrow-alt-circle-right"></i></span>
                     </button>
                 </div>
             </form>

@@ -3,7 +3,7 @@
 ------------------------------------------------------------------------------*/
 @font-face {
     font-family: 'Jura';
-    font-weight: 400 500;
+    font-weight: 300 400 500;
     src: url('/static/fonts/TTF/Jura-Medium.otf');
 }
 @font-face {
@@ -34,7 +34,7 @@ html {
     display: block;
     overflow: auto;
     position: relative;
-    top: 55px;
+    top: 42px;
     background-image: url('../../static/img/background.png');
     background-size: cover;
 
@@ -79,8 +79,9 @@ html {
 }
 
 .header {
-    min-height: 30px;
-    margin: 10px;
+    position:fixed;
+    width: 100%;
+
 }
 
 a {

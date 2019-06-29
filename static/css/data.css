@@ -18,7 +18,7 @@
 
 
 .row-title h3 {
-    font-size: 30px;
+    font-size: 1.5rem;
     font-weight: 700;
     color: white;
 }
@@ -32,7 +32,7 @@
 .row-cards {
     width: 70%;
     text-align: center;
-    padding: 1% 0% 1% 0%;
+    padding: 1% 0% 0% 0%;
 }
 
 .row-transactions {
@@ -51,6 +51,7 @@
     font-size: 1rem;
     text-align: left;
     color: #FFCB9A;
+    padding: 12px;
 }
 
 .card-block .card-content b {
@@ -87,7 +88,8 @@
     border: 1px solid #515663;
     color: white;
     margin-bottom: 15px;
-
+    padding-top: 2px;
+    padding-bottom: 2px;
 
 }
 
@@ -111,11 +113,17 @@
     padding-top: 8%;
 }
 
+.card .card-title {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 0px !important;
+}
+
 .modal {
     width: 20%;
-    height: 490px;
+    height: 480px;
     background: transparent;
-    max-height: 500px;
+    max-height: 480px;
     overflow: hidden;
 
 }
@@ -137,11 +145,11 @@
     background: #373d49;
     color: #FFCB9A;
     text-align: center;
-    font-size: 16px;
+    font-size: 1rem;
     position: absolute;
     display: none;
-    top: 10px;
     width: 100%;
+    padding: 2px;
 
 }
 
@@ -251,19 +259,7 @@ input[type="text"]:not(.browser-default) {
 
 
 @media(max-width:1700px) {
-    .card-block,
-    .card-function {
-        width: 80%;
-    }
 
-    .card-function .card-title {
-        font-size: 18px;
-    }
-
-    .hash_number {
-        height: 50px;
-
-    }
 
 
     .row-title,
@@ -274,7 +270,12 @@ input[type="text"]:not(.browser-default) {
 
 }
 
-@media(max-width:992px) {
+@media(max-width:1025px) {
+
+    .dashboard-cards {
+        width: 95%;
+        margin: auto;
+    }
 
     .modal {
         width: 50%;
@@ -282,6 +283,14 @@ input[type="text"]:not(.browser-default) {
         height: 470px;
     }
 
+    .card-function {
+        width: 95%;
+
+    }
+
+    .card-block {
+        width: 90%;
+    }
 
 
 }
@@ -295,12 +304,12 @@ input[type="text"]:not(.browser-default) {
     }
 
     .card-function .card-stacked {
-        padding-top: 10%;
+        line-height: 15px;
         font-size: 80%;
     }
 
     .card-function .card-title {
-        font-size: 16px;
+        font-size: 20px;
     }
     .modal {
         width: 80%;

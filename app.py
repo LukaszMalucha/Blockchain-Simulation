@@ -1,5 +1,5 @@
 import os
-# import env
+import env
 
 from flask import Flask, render_template, jsonify, request, send_file
 from flask_bootstrap import Bootstrap
@@ -15,7 +15,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('SQLALCHEMY_DATABASE_URI'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 app.config['PROPAGATE_EXCEPTIONS'] = False
-app.config['DEBUG'] = False
+app.config['DEBUG'] = True
 api = Api(app)
 
 Bootstrap(app)
@@ -106,11 +106,11 @@ if __name__ == '__main__':
         def create_tables():
             db.create_all()
 
-    # app.run()
+    app.run()
 
 # Docker
 #     app.run(host='0.0.0.0')
 
 # Heroku
-    port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port)
+#     port = int(os.environ.get('PORT', 5000))
+#     app.run(host='0.0.0.0', port=port)
