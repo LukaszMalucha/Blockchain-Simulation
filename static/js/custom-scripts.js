@@ -56,7 +56,7 @@ $(document).ready(function() {
             $('#transaction2').text(transaction2);
 
             $('#minedBlock').fadeOut(300).fadeIn(300);
-            $("#rowBlockchain").prepend('<div class="col-md-4">' +
+            $("#rowBlockchain").prepend('<div class="col-md-4 col-sm-5">' +
                                         '<div class="card card-block">' +
                                         '<div class="card-content">' +
                                             '<span class="card-title">' + "Block #" + data.index + '</span>'

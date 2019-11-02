@@ -132,7 +132,7 @@
     width: 90%;
     margin-right: 10%;
     word-wrap: break-word;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     color: #FFCB9A;
     height: 35px;
 }
@@ -291,6 +291,10 @@ input[type="text"]:not(.browser-default) {
     .card-block {
         width: 90%;
     }
+    .hash_number {
+        font-size: 0.7rem;
+    }
+
 
 
 }
