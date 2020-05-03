@@ -1,6 +1,6 @@
 # Blockchain Environment Simulation
 
-#### [Visit App on Heroku](https://blockchainsimulation.herokuapp.com/)
+##### [Visit App](http://www.unflasked.com/blockchain)
 
 <br>
 
@@ -15,11 +15,6 @@ Flask App simulation of a Blockchain. Great for getting your head around basic c
 Mining Block | Proof of Work | Hash | Validation Check | Blockchain Token ICO
 
 Happy mining!
-
-
-### Travis CI
-
-[![Build Status](https://travis-ci.com/LukaszMalucha/Blockchain-Simulation.svg?branch=master)](https://travis-ci.com/LukaszMalucha/Blockchain-Simulation)
 
 
 ## Tools, Modules and Techniques:
